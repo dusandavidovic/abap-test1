@@ -1,0 +1,16 @@
+FUNCTION ZZDD_ISU_SAMPLE_R433.
+*"--------------------------------------------------------------------
+*"*"Local Interface:
+*"  IMPORTING
+*"     REFERENCE(X_BUPA) TYPE  EKUN_EXT
+*"     REFERENCE(X_FKKVKP) TYPE  FKKVKP
+*"     REFERENCE(X_PRINTDOC) TYPE  ISU21_PRINT_DOC OPTIONAL
+*"     REFERENCE(X_PRINTDOCNO) LIKE  ERDK-OPBEL OPTIONAL
+*"     REFERENCE(X_INVOICE_UNIT) TYPE  ISU21_INVOICE_UNIT OPTIONAL
+*"     REFERENCE(X_PARAM) TYPE  ISU21_INVOICE_PARAM OPTIONAL
+*"  TABLES
+*"      T_VKK_DOC_ID TYPE  ISU21_T_VKK_DOC_ID
+*"      T_BILL_DOC TYPE  ISU2A_T_BILL_DOC
+*"--------------------------------------------------------------------
+check 1 = 1.
+ENDFUNCTION.

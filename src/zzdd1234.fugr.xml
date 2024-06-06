@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Test</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZZDD1234TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZZDD1234</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>MAP2E_CAUFVD_TO_ZZDD_BAPI_NETW</FUNCNAME>
+     <SHORT_TEXT>caufvd -&gt; zzdd_bapi_network_exp</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>CAUFVD</PARAMETER>
+       <DBFIELD>CAUFVD</DBFIELD>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>ZZDD_BAPI_NETWORK_EXP</PARAMETER>
+       <DBFIELD>ZZDD_BAPI_NETWORK_EXP</DBFIELD>
+       <REFERENCE>X</REFERENCE>
+      </RSCHA>
+     </CHANGING>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>ERROR_CONVERTING_KEYS</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>CAUFVD</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ZZDD_BAPI_NETWORK_EXP</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ERROR_CONVERTING_KEYS</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>MAP2I_BAPI_ALM_ORDER_COMPONENT</FUNCNAME>
+     <SHORT_TEXT>bapi_alm_order_component_e -&gt; resbd</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>BAPI_ALM_ORDER_COMPONENT_E</PARAMETER>
+       <DBFIELD>BAPI_ALM_ORDER_COMPONENT_E</DBFIELD>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>RESBD</PARAMETER>
+       <DBFIELD>RESBD</DBFIELD>
+       <REFERENCE>X</REFERENCE>
+      </RSCHA>
+     </CHANGING>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>ERROR_CONVERTING_ISO_CODE</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>BAPI_ALM_ORDER_COMPONENT_E</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RESBD</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ERROR_CONVERTING_ISO_CODE</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>MAP2I_IBAPI_HEADER_OUT_TO_BAPI</FUNCNAME>
+     <SHORT_TEXT>ibapi_header_out -&gt; bapi_network_exp</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IBAPI_HEADER_OUT</PARAMETER>
+       <DBFIELD>IBAPI_HEADER_OUT</DBFIELD>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>BAPI_NETWORK_EXP</PARAMETER>
+       <DBFIELD>BAPI_NETWORK_EXP</DBFIELD>
+       <REFERENCE>X</REFERENCE>
+      </RSCHA>
+     </CHANGING>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>ERROR_CONVERTING_ISO_CODE</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IBAPI_HEADER_OUT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>BAPI_NETWORK_EXP</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ERROR_CONVERTING_ISO_CODE</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>MAP2I_NREL_TO_WOREL</FUNCNAME>
+     <SHORT_TEXT>network_relation -&gt; WO relation</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>ZZDD_BAPI_NETWORK_RELATION</PARAMETER>
+       <DBFIELD>ZZDD_BAPI_NETWORK_RELATION</DBFIELD>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>ZBAOR</PARAMETER>
+       <DBFIELD>ZBAOR</DBFIELD>
+       <REFERENCE>X</REFERENCE>
+      </RSCHA>
+     </CHANGING>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>ERROR_CONVERTING_ISO_CODE</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>ZZDD_BAPI_NETWORK_RELATION</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ZBAOR</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ERROR_CONVERTING_ISO_CODE</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZZDD_BTP_USER_DB</FUNCNAME>
+     <UPDATE_TASK>1</UPDATE_TASK>
+     <SHORT_TEXT>BTP_USER: DB operations</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_UPD_IND</PARAMETER>
+       <TYP>/RIVER/UPD_IND</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <TYP>ZZDD_BTP_USER_T</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_UPD_IND</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Update Indicator</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>BTP_User Table Type</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZZDD_CFG_BAS_DB</FUNCNAME>
+     <UPDATE_TASK>1</UPDATE_TASK>
+     <SHORT_TEXT>CFG_BAS: DB operations</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_UPD_IND</PARAMETER>
+       <TYP>/RIVER/UPD_IND</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <TYP>ZZD_CFG_BAS_T</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_UPD_IND</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Update Indicator</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Base Configuration</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZZDD_CFG_FACT_DB</FUNCNAME>
+     <UPDATE_TASK>1</UPDATE_TASK>
+     <SHORT_TEXT>CFG_FACT: DB operations</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_UPD_IND</PARAMETER>
+       <TYP>/RIVER/UPD_IND</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <TYP>ZZDD_CFG_FACT_T</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_UPD_IND</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Update Indicator</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Factory Configuration</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZZDD_CFG_MAP_DB</FUNCNAME>
+     <UPDATE_TASK>1</UPDATE_TASK>
+     <SHORT_TEXT>CFG_MAP: DB operations</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_UPD_IND</PARAMETER>
+       <TYP>/RIVER/UPD_IND</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <TYP>ZZDD_CFG_MAP_T</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_UPD_IND</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Update Indicator</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Mapping Configuration</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZZDD_ISU_SAMPLE_R433</FUNCNAME>
+     <SHORT_TEXT>Event R433: Transfer Document Header with Document Number</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>X_BUPA</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EKUN_EXT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>X_FKKVKP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FKKVKP</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>X_PRINTDOC</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ISU21_PRINT_DOC</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>X_PRINTDOCNO</PARAMETER>
+       <DBFIELD>ERDK-OPBEL</DBFIELD>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>X_INVOICE_UNIT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ISU21_INVOICE_UNIT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>X_PARAM</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ISU21_INVOICE_PARAM</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>T_VKK_DOC_ID</PARAMETER>
+       <TYP>ISU21_T_VKK_DOC_ID</TYP>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_BILL_DOC</PARAMETER>
+       <TYP>ISU2A_T_BILL_DOC</TYP>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>X_BUPA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>CBP: General Data (Read Transfer Structure)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>X_FKKVKP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Contract Account</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>X_PRINTDOC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Print Document</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>X_PRINTDOCNO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Number of Print Document</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>X_INVOICE_UNIT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>X_PARAM</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_VKK_DOC_ID</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_BILL_DOC</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+   <LONGTEXTS_ZZDD_ISU_SAMPLE_R433>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZZDD_ISU_SAMPLE_R433</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0006</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00026</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZZDD_ISU_SAMPLE_R433</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00006</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die zum Ereignis R433 aufgerufenen Funktionsbausteine haben die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Möglichkeit, Zusatzaktionen abzuschließen, die über vorangegangene</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Ereignisse der Fakturierung initiiert wurden. Zur Verfügung gestellt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>werden die Vertragskontokorrentbelege inklusive der inzwischen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>vergebenen Belegnummern, die in der Fakturierung erstellt werden. Es</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>sollte nur die vergebenen Belegnummern in den intern gemerkten Daten</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ergänzt werden, die später auf der Datenbank fortgeschrieben werden</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>sollen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Gleichzeitig stehen der Geschaeftspartner, das Vertragskonto und die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>fakturierten Vertragsabrechnungsbelege zur Verfuegung.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Falls eigene Daten fortgeschrieben werden, ist  zu beachten, dass die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Fortschreibung der Belegdaten in der laufenden Task erfolgt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Fortschreibung der eigenen Daten sollte jeweils entsprechend</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>erfolgen, um asynchrone Zustände der Datenbank auszuschließen. Ein</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>asynchroner Zustand würde erreicht, wenn die Verbuchungstask abbricht</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>aber die Datenbankänderungen der laufenden Task durchgeführt werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>STYLE S_DOCUS1</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>Restriktionen bei der Programmierung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Um die Konsistenz des Systems nicht zu gefährden, beachten Sie, daß Sie</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>die folgenden Sprachelemente in Zeitpunkten &lt;ZH&gt;nicht&lt;/&gt; verwenden</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>dürfen:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>COMMIT WORK</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>ROLLBACK WORK</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CALL FUNCTION &apos;DEQUEUE ALL&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Löschen von Sperren, die Sie nicht selbst gesetzt haben</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>STYLE *</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZZDD_ISU_SAMPLE_R433</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0006</VERSION>
+      <TXTLINES>00013</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZZDD_ISU_SAMPLE_R433</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00006</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The function modules called for event R433 can complete additional</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>actions initiated by previous events. The system makes available the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>contract account A/R and A/P documents, inlcuding the allocated</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>document numbers created in IS-U invoicing. Only enhance allocated</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>document numbers that are to be updated in the database.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The system also makes available the business partner, contract account</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>and the invoiced contract billing documents.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>When updating your own data, note that the document data is updated in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the current task.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>You must update your own data to avoid asynchronous data occuring in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the database. This can happen if the update task is cancelled, but the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>current task makes the changes to the database.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE ISU_HINW_EVENT OBJECT DOKU ID TX</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS_ZZDD_ISU_SAMPLE_R433>
+  </asx:values>
+ </asx:abap>
+</abapGit>
